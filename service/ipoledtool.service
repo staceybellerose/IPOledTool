@@ -1,0 +1,12 @@
+[Unit]
+Description=IP Oled Tool
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/IPOledTool/updateshowip.py &
+WorkingDirectory=/home/pi/IPOledTool
+User=pi
+
+[Install]
+WantedBy=multi-user.target
