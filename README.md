@@ -53,3 +53,7 @@ The script uses the following libraries (install with pip3):
 - busio (pip3 install adafruit-blinka)
 - oled_text (pip3 install oled_text)
 - PIL (pip3 install Pillow)
+
+Or simply run:
+
+        pip3 install requirements.txt 
