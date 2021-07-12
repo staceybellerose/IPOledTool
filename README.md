@@ -43,3 +43,13 @@ Create a service using ipoledtool.service
 
         sudo systemctl daemon-reload
         sudo systemctl enable ipoledtool.service
+        
+        
+## Libraries
+
+The script uses the following libraries (install with pip3):
+- schedule (pip3 install schedule)
+- board (pip3 install board)
+- busio (pip3 install adafruit-blinka)
+- oled_text (pip3 install oled_text)
+- PIL (pip3 install Pillow)
