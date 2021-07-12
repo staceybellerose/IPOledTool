@@ -56,4 +56,4 @@ The script uses the following libraries (install with pip3):
 
 Or simply run:
 
-        pip3 install requirements.txt 
+        pip3 install -r requirements.txt 
