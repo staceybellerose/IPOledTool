@@ -28,8 +28,11 @@ from oled_text import OledText
 from more_scripts import getip
 import socket
 
-i2c = busio.I2C(SCL, SDA)
-
+try:
+    i2c = busio.I2C(SCL, SDA)
+except:
+    print("I2C error, maybe you forgot to enable itthrough raspi-config?")
+    exit()
 # Create the display, pass its pixel dimensions
 oled = OledText(i2c, 128, 32)
 
