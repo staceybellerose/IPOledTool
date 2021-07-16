@@ -20,6 +20,16 @@ import sys
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
+try:
+    from board import SCL, SDA
+except:
+    # adafruit-blinka
+    print("board package not found, trying to install adafruit-blinka")
+    install("adafruit-blinka")
+    try:
+        from board import SCL, SDA
+    except:
+        print("Still an issue with board package. Aborting.")
 
 print("IPOledTool script was executed")
 print("This script prints hostname, eth0 and wlan0 addresses on small oled")
@@ -28,11 +38,6 @@ print("J.A. Korten - 2021")
 print()
 print("Initial values:")
 
-try:
-    from board import SCL, SDA
-except:
-    # adafruit-blinka
-    install("adafruit-blinka")
 
 import busio
 from oled_text import OledText
@@ -42,7 +47,7 @@ import socket
 try:
     i2c = busio.I2C(SCL, SDA)
 except:
-    print("I2C error, maybe you forgot to enable itthrough raspi-config?")
+    print("I2C error, maybe you forgot to enable it through raspi-config?")
     exit()
 # Create the display, pass its pixel dimensions
 oled = OledText(i2c, 128, 32)
