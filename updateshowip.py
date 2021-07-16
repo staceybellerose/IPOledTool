@@ -20,8 +20,9 @@ import sys
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "reinstall", package])
 
-try:
-    from board import SCL, SDA
+from board import SCL, SDA
+'''
+ToDo: fix auto installing blinka.
 except:
     # adafruit-blinka
     print("board package not found, trying to install adafruit-blinka")
@@ -30,7 +31,7 @@ except:
         from board import SCL, SDA
     except:
         print("Still an issue with board package. Aborting.")
-
+'''
 print("IPOledTool script was executed")
 print("This script prints hostname, eth0 and wlan0 addresses on small oled")
 print("Values are update every second")
