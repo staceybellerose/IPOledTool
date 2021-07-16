@@ -14,7 +14,12 @@ import schedule
 import time
 import schedule
 import time
-import pip
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
 
 print("IPOledTool script was executed")
 print("This script prints hostname, eth0 and wlan0 addresses on small oled")
@@ -27,7 +32,7 @@ try:
     from board import SCL, SDA
 except:
     # adafruit-blinka
-    failed = pip.main(["install", "adafruit-blinka"])
+    install("adafruit-blinka")
 
 import busio
 from oled_text import OledText
