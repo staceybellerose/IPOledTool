@@ -4,7 +4,7 @@
 # J.A. Korten
 # July 7, 2021
 # Script to show hostname, eth0 and wlan0 addresses on small oled
-# 
+#
 # Don't forget to sudo chmod +x updateshowip.py on the script and add it as a cronjob
 #
 # we will run it as systemd process to avoid startup issues
@@ -14,6 +14,7 @@ import schedule
 import time
 import schedule
 import time
+import pip3
 
 print("IPOledTool script was executed")
 print("This script prints hostname, eth0 and wlan0 addresses on small oled")
@@ -22,7 +23,12 @@ print("J.A. Korten - 2021")
 print()
 print("Initial values:")
 
-from board import SCL, SDA
+try:
+    from board import SCL, SDA
+except:
+    # adafruit-blinka
+    failed = pip3.main(["install", "adafruit-blinka"])
+
 import busio
 from oled_text import OledText
 from more_scripts import getip
