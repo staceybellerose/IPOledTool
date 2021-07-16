@@ -14,7 +14,7 @@ import schedule
 import time
 import schedule
 import time
-import pip3
+import pip
 
 print("IPOledTool script was executed")
 print("This script prints hostname, eth0 and wlan0 addresses on small oled")
@@ -27,7 +27,7 @@ try:
     from board import SCL, SDA
 except:
     # adafruit-blinka
-    failed = pip3.main(["install", "adafruit-blinka"])
+    failed = pip.main(["install", "adafruit-blinka"])
 
 import busio
 from oled_text import OledText
