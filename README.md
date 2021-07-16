@@ -13,9 +13,9 @@ Any I2C SSD1306 OLED display should work.
 
 ## Step A. Prepare python files
 
-Two options:
-I. Through git clone
-II. Manually
+Two options:<br>
+I. Through git clone<br>
+II. Manually<br>
 
 ### I. Git clone option
 
