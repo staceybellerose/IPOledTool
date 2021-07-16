@@ -82,4 +82,8 @@ The script uses the following libraries (install with pip3):
 
 Or simply run:
 
-        pip3 install -r requirements.txt 
+        pip3 install -r requirements.txt
+
+If you get the message that pip3 can not be found then first:
+
+        sudo apt install python3-pip
