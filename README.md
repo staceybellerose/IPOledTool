@@ -7,6 +7,32 @@ Tool to put hostname and ip's on an Oled display of a Pi
 
 ## Step A. Prepare python files
 
+Two options:
+I. Through git clone
+II. Manually
+
+### I. Git clone option
+
+1. Clone this repository: 
+
+        git clone https://github.com/jakorten/IPOledTool.git
+        
+2. CD to that folder:
+
+        cd ~/IPOledTool
+
+3. Make updateshowip.py executable:
+
+        sudo chmod +x updateshowip.py
+
+4. Check the script:
+
+        ./updateshowip.py
+
+5. Add possibly missing libraries using pip3 (now you are supposed to use: sudo python3 -m pip install some_python_library_name)
+
+
+### II. Manual option
 
 1. Create a folder:
 
