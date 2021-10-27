@@ -103,5 +103,5 @@ If you get the message that pip3 can not be found then first:
         
 ### Showcase
 
-See it working at: https://youtu.be/LAirwxDsLGI
+See it working at: https://youtu.be/LAirwxDsLGI<br>
 Schematics can be found here: https://github.com/jakorten/IPOledTool/blob/main/oled_board_schematics.png
