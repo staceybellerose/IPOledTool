@@ -67,7 +67,7 @@ You could simply issue to install all needed libraries (see down below):
 
 ## Step B. Create a Service
 
-Create a service using ipoledtool.service
+Create a service using ipoledtool.service:<br>
 (see: https://www.raspberrypi-spy.co.uk/2015/10/how-to-autorun-a-python-script-on-boot-using-systemd/)
 
 1. Copy ipoledtool.service to /lib/systemd/system/
