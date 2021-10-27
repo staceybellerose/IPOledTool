@@ -100,3 +100,6 @@ Or simply run:
 If you get the message that pip3 can not be found then first:
 
         sudo apt install python3-pip
+        
+        
+See it working at: https://youtu.be/LAirwxDsLGI
