@@ -10,7 +10,8 @@ We use it in conjunction with e.g. Homebridge and Octopi servers that are not co
 
 Oled display used was a: <br>
 "AZDelivery 0.91" OLED Display I2C SSD1306 Chip 128 x 32 Pixel I2C Screen Display Module with White Characters".
-Any I2C SSD1306 OLED display should work.
+
+However, also I2C SSD1306 OLED displays should work.
 
 ## Step A. Prepare python files
 
