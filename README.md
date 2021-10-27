@@ -8,7 +8,8 @@ Tool to put hostname and ip's on an Oled display of a Pi
 We tested this code with both Raspberry Pi 3 and 4's.
 We use it in conjunction with e.g. Homebridge and Octopi servers that are not connected to any screen apart from the simple Oled displays.
 
-Oled display used was a "AZDelivery 0.91" OLED Display I2C SSD1306 Chip 128 x 32 Pixel I2C Screen Display Module with White Characters".
+Oled display used was a: <br>
+"AZDelivery 0.91" OLED Display I2C SSD1306 Chip 128 x 32 Pixel I2C Screen Display Module with White Characters".
 Any I2C SSD1306 OLED display should work.
 
 ## Step A. Prepare python files
