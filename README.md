@@ -70,6 +70,8 @@ Create a service using ipoledtool.service
 
 1. Copy ipoledtool.service to /lib/systemd/system/
 
+        sudo cp service/ipoledtool.service /lib/systemd/system
+
 2. Make service exacutable
 
         sudo chmod 644 /lib/systemd/system/ipoledtool.service
