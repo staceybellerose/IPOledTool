@@ -58,8 +58,8 @@ II. Manually<br>
 
         ./updateshowip.py
 
-6. Add possibly missing libraries using pip3 (now you are supposed to use: sudo python3 -m pip install some_python_library_name)
-You could simply issue to install all needed libraries:
+6. Add possibly missing libraries using pip3 (now you are supposed to use: sudo python3 -m pip install some_python_library_name).
+You could simply issue to install all needed libraries (see down below):
 
         pip3 install -r requirements.txt
 
